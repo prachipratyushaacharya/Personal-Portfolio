@@ -86,6 +86,11 @@ body
        margin: -3px 0;
        opacity: 0;
        animation: slideRight 1s ease forwards;
+       animation-delay: 1s;
+}
+
+.home-content p {
+
 }
 
 .home-sci a {
@@ -99,8 +104,13 @@ body
     border-radius: 50%;
     font-size: 20px;
     color: aqua;
-    text-decoration: 30px 15px 30px 0;
+    text-decoration: none;
+    transition: .5s ease;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: calc(.2s * var(--i));
     margin: 30px 15px 30px 0;
+
 }
 
 .home-sci a:hover {
@@ -158,3 +168,5 @@ body
         opacity: 1;
     }
 }
+
+
