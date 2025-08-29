@@ -46,6 +46,7 @@ body
     transition: .3s;
     opacity: 0;
     animation: slideTop .5s ease forwards;
+    animation-delay: calc(.2s * var(--i));
 }
 
 .navbar a:hover {
@@ -108,7 +109,7 @@ body
     transition: .5s ease;
     opacity: 0;
     animation: slideLeft 1s ease forwards;
-    animation-delay: calc(.2s * var(--i));
+    animation-delay: calc(var(--i) * .2s);
     margin: 30px 15px 30px 0;
 
 }
@@ -129,6 +130,7 @@ body
     letter-spacing: 1px;
     text-decoration: none;
     font-weight: bolder;
+    animation: slideLeft 1s ease forwards;
 }
 
 .btn-box:hover {
@@ -145,6 +147,19 @@ body
         opacity: 1;
     }
 }
+
+@keyframes slideLeft {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+
 
 @keyframes slideTop {
     0% {
