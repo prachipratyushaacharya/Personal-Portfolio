@@ -1,44 +1,450 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Prachi Pratyusha Acharya</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prachi Pratyusha Acharya | Portfolio</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Syne:wght@400..800&display=swap"
+        rel="stylesheet">
+
+    <!-- BoxIcons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <header class="header">
-        <a href="#" class="logo">Portfolio</a>
 
+<body>
+
+    <!-- Background Particles -->
+    <div id="tsparticles"></div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <!-- Scroll Progress -->
+    <div class="scroll-progress-container">
+        <div class="scroll-progress-bar" id="progressBar"></div>
+    </div>
+
+    <!-- Header / Navbar -->
+    <header class="header">
+        <a href="#" class="logo">P<span>.</span></a>
         <nav class="navbar">
-            <a href="#" style="--i:1" class ="active">Home</a>
-            <a href="#" style="--i:2">About</a>
-            <a href="#" style="--i:3">Skills</a>
-            <a href="#" style="--i:4">Contact</a>
+            <a href="#home" class="nav-link">Home</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#skills" class="nav-link">Skills</a>
+            <a href="#projects" class="nav-link">Projects</a>
+            <a href="#experience" class="nav-link">Experience</a>
+            <a href="#contact" class="nav-link">Contact</a>
         </nav>
+        <div class="menu-icon"><i class='bx bx-menu'></i></div>
     </header>
 
-    <section class="home">
-        <div class ="home-content">
-            <h3>Hello, It's Me</h3>
-            <h1>Prachi Pratyusha Acharya</h1>
-            <h3>And I'm a <span class="text"></span></h3>
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero section">
+            <div class="hero-content">
+                <h1 class="hero-title">Prachi Pratyusha<br><span class="accent-text">Acharya</span></h1>
+                <h2 class="hero-subtitle">I'm a <span class="typed-text"></span></h2>
+                <p class="hero-desc">CS undergraduate · Building digital products where logic meets aesthetics</p>
 
+                <div class="hero-ctas">
+                    <a href="#projects" class="btn btn-primary magnetic"><span class="btn-text">View My Work</span></a>
+                    <a href="#contact" class="btn btn-secondary magnetic"><span class="btn-text">Let's
+                            Connect</span></a>
+                </div>
 
-            <div class="home-sci">
-                <a href="#" style="--i:5"><i class='bx bxl-linkedin' ></i></a>
-                <a href="#" style="--i:6"><i class='bx bxl-instagram'></i></a>
-                <a href="#" style="--i:7"><i class='bx bxl-whatsapp' ></i></a>                      
+                <div class="social-links">
+                    <a href="https://linkedin.com/in/prachi-pratyusha-acharya" target="_blank" class="magnetic"><i
+                            class='bx bxl-linkedin'></i></a>
+                    <a href="https://github.com/prachipratyushaacharya" target="_blank" class="magnetic"><i
+                            class='bx bxl-github'></i></a>
+                    <a href="#" target="_blank" class="magnetic"><i class='bx bxl-instagram'></i></a>
+                    <a href="#" target="_blank" class="magnetic"><i class='bx bxl-whatsapp'></i></a>
+                    <a href="mailto:prachipratyushaacharya@gmail.com" class="magnetic"><i
+                            class='bx bx-envelope'></i></a>
+                </div>
             </div>
-            <a href="#" class="btn-box">More About Me</a>
-        </div>
-    </section>
 
+            <div class="hero-image-wrapper">
+                <div class="profile-frame">
+                    <div class="conic-ring"></div>
+                    <img src="myself.png" alt="Prachi Pratyusha Acharya" class="profile-img">
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about section">
+            <div class="section-header">
+                <span class="section-num">01</span>
+                <h2 class="section-title">About Me</h2>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-bio glass-panel fade-up">
+                    <p>
+                        I'm a CS undergrad at CV Raman Global University, passionate about full-stack interfaces and
+                        visual design. Currently a Product & Design Contributor at GoWeekends.
+                    </p>
+                    <p>
+                        I believe in the intersection of logic and aesthetics — I'm a builder who designs and a designer
+                        who codes. I'm equally comfortable writing React components, designing in Figma, and creating
+                        brand identities.
+                    </p>
+                    <p>
+                        Also a theatre scriptwriter and director — a creative at heart.
+                    </p>
+                </div>
+
+                <div class="about-stats fade-up">
+                    <div class="stat-card glass-panel">
+                        <h3 class="stat-value">5+</h3>
+                        <p class="stat-label">Projects Built</p>
+                    </div>
+                    <div class="stat-card glass-panel">
+                        <h3 class="stat-value">3</h3>
+                        <p class="stat-label">Awards Won</p>
+                    </div>
+                    <div class="stat-card glass-panel">
+                        <h3 class="stat-value">React</h3>
+                        <p class="stat-label">+ Figma</p>
+                    </div>
+                    <div class="stat-card glass-panel">
+                        <h3 class="stat-value">6th</h3>
+                        <p class="stat-label">Sem B.Tech</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills section">
+            <div class="section-header">
+                <span class="section-num">02</span>
+                <h2 class="section-title">Skills & Arsenal</h2>
+            </div>
+
+            <div class="skills-tracks">
+                <div class="skill-track glass-panel fade-up">
+                    <div class="track-header">
+                        <i class='bx bx-code-alt'></i>
+                        <h3>Tech Track</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">C</span>
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">HTML</span>
+                        <span class="skill-tag">CSS</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">PostgreSQL</span>
+                        <span class="skill-tag">Spring Boot</span>
+                        <span class="skill-tag">Tailwind</span>
+                        <span class="skill-tag outline">LLM APIs (Beg)</span>
+                        <span class="skill-tag outline">FAISS (Beg)</span>
+                    </div>
+                </div>
+
+                <div class="skill-track glass-panel fade-up" style="animation-delay: 0.2s">
+                    <div class="track-header">
+                        <i class='bx bx-palette'></i>
+                        <h3>Design Track</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Figma</span>
+                        <span class="skill-tag">Adobe Creative Suite</span>
+                        <span class="skill-tag">Canva</span>
+                        <span class="skill-tag">CAD</span>
+                        <span class="skill-tag">UI/UX Design</span>
+                        <span class="skill-tag">Branding</span>
+                        <span class="skill-tag">Packaging Design</span>
+                        <span class="skill-tag">Print Design</span>
+                        <span class="skill-tag">Editorial Design</span>
+                        <span class="skill-tag">Visual Identity</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects section">
+            <div class="section-header">
+                <span class="section-num">03</span>
+                <h2 class="section-title">Selected Works</h2>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card fade-up">
+                    <div class="project-border-sweep"></div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <span class="project-badge">Full-Stack</span>
+                            <div class="project-links">
+                                <a href="#"><i class='bx bx-link-external'></i></a>
+                            </div>
+                        </div>
+                        <h3 class="project-title">Campus GigVerse Unite (CGU)</h3>
+                        <p class="project-desc">Student freelance marketplace bridging campus talent with opportunities.
+                        </p>
+                        <div class="project-tech">
+                            <span>React</span><span>Tailwind</span><span>Supabase</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card fade-up">
+                    <div class="project-border-sweep"></div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <span class="project-badge">AI Explorer</span>
+                            <div class="project-links">
+                                <a href="#"><i class='bx bx-link-external'></i></a>
+                            </div>
+                        </div>
+                        <h3 class="project-title">Job Autonomous Agent</h3>
+                        <p class="project-desc">AI-assisted job application agent using LLM workflows to generate
+                            tailored resumes and cover letters.</p>
+                        <div class="project-tech">
+                            <span>Python</span><span>LLM</span><span>FAISS Vector Search</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card fade-up">
+                    <div class="project-border-sweep"></div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <span class="project-badge">Backend + Frontend</span>
+                            <div class="project-links">
+                                <a href="#"><i class='bx bx-link-external'></i></a>
+                            </div>
+                        </div>
+                        <h3 class="project-title">Quizora</h3>
+                        <p class="project-desc">Role-based interactive quiz platform with secure authentication.</p>
+                        <div class="project-tech">
+                            <span>Spring Boot</span><span>MySQL</span><span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card fade-up">
+                    <div class="project-border-sweep"></div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <span class="project-badge">Frontend Design</span>
+                            <div class="project-links">
+                                <a href="#"><i class='bx bx-link-external'></i></a>
+                            </div>
+                        </div>
+                        <h3 class="project-title">Delicious Bites</h3>
+                        <p class="project-desc">Responsive restaurant website focused on clean UI and strong branding.
+                        </p>
+                        <div class="project-tech">
+                            <span>HTML/CSS</span><span>JS</span><span>Figma</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="project-card fade-up">
+                    <div class="project-border-sweep"></div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <span class="project-badge">Graphic Design</span>
+                            <div class="project-links">
+                                <a href="#"><i class='bx bx-link-external'></i></a>
+                            </div>
+                        </div>
+                        <h3 class="project-title">Visualia</h3>
+                        <p class="project-desc">Branding, packaging, and editorial design series across multiple
+                            formats.</p>
+                        <div class="project-tech">
+                            <span>Adobe CC</span><span>Visual Identity</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience & Education Section -->
+        <section id="experience" class="timeline-section section">
+            <div class="section-header">
+                <span class="section-num">04</span>
+                <h2 class="section-title">Journey</h2>
+            </div>
+
+            <div class="timeline-container">
+                <!-- Experience -->
+                <div class="timeline-column fade-up">
+                    <h3 class="timeline-title"><i class='bx bx-briefcase'></i> Experience</h3>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-panel">
+                            <h4>Product & Design Contributor</h4>
+                            <h5>GoWeekends <span>| Feb 2026 – Present, Bhubaneswar</span></h5>
+                            <ul>
+                                <li>Led end-to-end user flow design: discovery → booking → participation.</li>
+                                <li>Built platform feature blueprints for event listing, journeys, and interactions.
+                                </li>
+                                <li>Owned tiered engagement system (Gold, Platinum, Elite) for user retention.</li>
+                                <li>Defined UI/UX patterns in Figma; translated product ideas into scalable designs.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Education -->
+                <div class="timeline-column fade-up" style="animation-delay: 0.2s">
+                    <h3 class="timeline-title"><i class='bx bx-book-open'></i> Education</h3>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-panel">
+                            <h4>B.Tech in Computer Science</h4>
+                            <h5>C.V. Raman Global University <span>| 2023–2027</span></h5>
+                            <p>Currently in 6th Semester, Bhubaneswar.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-panel">
+                            <h4>Class XII</h4>
+                            <h5>DAV Public School <span>| 2020–2022</span></h5>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-panel">
+                            <h4>Class X</h4>
+                            <h5>Gouri Shankar Residential School <span>| 2018–2020</span></h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Awards Section -->
+        <section id="awards" class="awards section">
+            <div class="section-header">
+                <span class="section-num">05</span>
+                <h2 class="section-title">Honors & Awards</h2>
+            </div>
+
+            <div class="awards-list">
+                <div class="award-item glass-panel fade-up">
+                    <div class="award-icon"><i class='bx bx-medal' style="color: silver;"></i></div>
+                    <div class="award-details">
+                        <h4>Runner-Up, Rangmanch</h4>
+                        <p>Spring Fest 2025, IIT Kharagpur <span>(Theatre Scriptwriter)</span></p>
+                    </div>
+                </div>
+
+                <div class="award-item glass-panel fade-up">
+                    <div class="award-icon"><i class='bx bx-medal' style="color: silver;"></i></div>
+                    <div class="award-details">
+                        <h4>Runner-Up, Abhinay</h4>
+                        <p>Alma Fiesta 2025, IIT Bhubaneswar <span>(Scriptwriter + Director)</span></p>
+                    </div>
+                </div>
+
+                <div class="award-item glass-panel fade-up">
+                    <div class="award-icon"><i class='bx bx-medal' style="color: #cd7f32;"></i></div>
+                    <div class="award-details">
+                        <h4>Bronze Medalist — Odisha Skills</h4>
+                        <p>Graphic Design Technology 2025–26 <span>(IndiaSkills)</span></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact section">
+            <div class="section-header">
+                <span class="section-num">06</span>
+                <h2 class="section-title">Initiate Contact</h2>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info fade-up">
+                    <p class="contact-lead">Let's build something magical together. Whether it's a product, a design
+                        system, or a script.</p>
+
+                    <ul class="contact-list">
+                        <li><i class='bx bx-envelope'></i> <a
+                                href="mailto:prachipratyushaacharya@gmail.com">prachipratyushaacharya@gmail.com</a></li>
+                        <li><i class='bx bx-phone'></i> <a href="tel:+917008355789">7008355789</a></li>
+                        <li><i class='bx bx-map'></i> Bhubaneswar, Odisha, India</li>
+                    </ul>
+
+                    <div class="social-links large">
+                        <a href="https://linkedin.com/in/prachi-pratyusha-acharya" target="_blank" class="magnetic"><i
+                                class='bx bxl-linkedin'></i></a>
+                        <a href="https://github.com/prachipratyushaacharya" target="_blank" class="magnetic"><i
+                                class='bx bxl-github'></i></a>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper glass-panel fade-up">
+                    <form class="contact-form">
+                        <div class="input-group">
+                            <input type="text" id="name" required>
+                            <label for="name">Your Name</label>
+                            <div class="input-glow"></div>
+                        </div>
+                        <div class="input-group">
+                            <input type="email" id="email" required>
+                            <label for="email">Email Address</label>
+                            <div class="input-glow"></div>
+                        </div>
+                        <div class="input-group">
+                            <textarea id="message" rows="4" required></textarea>
+                            <label for="message">Message</label>
+                            <div class="input-glow"></div>
+                        </div>
+                        <button type="submit" class="btn btn-primary submit-btn">
+                            <span class="btn-text">Send Message</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Prachi Pratyusha Acharya. Designed & Coded with <i class='bx bxs-heart'
+                style="color: var(--accent-purple);"></i></p>
+    </footer>
+
+    <!-- Libraries -->
+    <!-- TSParticles -->
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.12.0/tsparticles.bundle.min.js"></script>
+
+    <!-- Typed.js -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+    <!-- Custom JS -->
     <script src="script.js"></script>
 </body>
+
 </html>
